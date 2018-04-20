@@ -1,0 +1,5 @@
+auther: Geoff Zhu
+
+less:
+  paths:
+    - bower_components/bootstrap/less
