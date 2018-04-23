@@ -1,5 +1,6 @@
 <% page.posts.each(function(post){ %>
-  <a href="<%- url_for(post.path) %>">
+  <a class="title-wrapper" href="<%- url_for(post.path) %>" alt="<%- post.title %>">
+    <p class="date"><%- date(post.date, null) %></p>
     <h1 class="title"><%- post.title %></h1>
   </a>
 <% }) %>

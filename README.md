@@ -1,25 +1,25 @@
 # yi
 
-A new theme for [Hexo].
+A Hexo theme for my blog.
 
-- [Preview](http://hexo.io/hexo-theme-yi/)
+- [Preview](http://geoffzhu.cn/)
 
 ## Installation
 
-### Install
-
-### Enable
-
-Modify `theme` setting in `_config.yml` to `yi`.
-
-### Update
-
 ``` bash
-cd themes/yi
-git pull
+$ npm install hexo-renderer-less --save
+$ git clone https://github.com/geoffzhu/hexo-theme-yi themes/yi
 ```
 
-## Configuration
+#### _config.yml
 
 ``` yml
+theme: yi
+
+social:
+  About: /about
+  Github: https://github.com/GeoffZhu
+  Zhihu: https://www.zhihu.com/people/geoffzhu/activities
+  Weibo: https://weibo.com/geoffzhu
+
 ```

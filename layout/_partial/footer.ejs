@@ -1,9 +1,10 @@
 <footer class="footer">
   <div>&copy; <%= date(new Date(), 'YYYY') %> <%= config.author || config.title %></div>
   <div>
-    <a>About</a>
-    <a>Github</a>
-    <a>Weibo</a>
-    <a>Zhihu</a>
+    <% for (item in theme.social) { %>
+      <% if (theme.social[item]) { %>
+        <a href="<%- item != 'About' ? theme.social[item] : config.root + theme.social[item] %>" target="<%= item != 'About' ? '_blank' : ''%>"><%- item %></a>
+      <% } %>
+    <% } %>
   </div>
 </footer>
