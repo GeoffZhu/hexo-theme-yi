@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title><%= config.title %></title>
+  <% if (page.title) { %>
+  <meta name="description" content="<%= page.title %> - <%= config.title %>">
+  <% } %>
+  <meta name="keyword" content="<%= config.keyword %>">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <%- css('css/style') %>
+  <% if (config.baiduId) { %>
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?<%- config.baidu_analysis_id %>";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+  <% } %>
 </head>
