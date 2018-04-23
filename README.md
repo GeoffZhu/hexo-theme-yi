@@ -22,4 +22,7 @@ social:
   Zhihu: https://www.zhihu.com/people/geoffzhu/activities
   Weibo: https://weibo.com/geoffzhu
 
+
+icon_path: /img/favicon.ico
+baidu_analysis_id: youridhere
 ```
