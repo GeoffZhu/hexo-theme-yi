@@ -3,3 +3,7 @@ auther: Geoff Zhu
 less:
   paths:
     - bower_components/bootstrap/less
+
+marked:
+  gfm: true
+  breaks: false

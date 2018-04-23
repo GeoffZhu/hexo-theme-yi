@@ -229,7 +229,8 @@
   & table {
     display: block;
     width: 100%;
-    overflow: auto
+    overflow: auto;
+    border-collapse: collapse;
   }
   
   & table th {
@@ -248,7 +249,7 @@
   }
   
   & table tr:nth-child(2n) {
-    background-color: #ffe5b5
+    background-color: #f6f8fa;
   }
   
   & table img {
@@ -413,7 +414,9 @@
     background-color: #f6f8fa;
     border-radius: 3px
   }
-  
+  & .highlight tr {
+    border: none;
+  }
   & pre code,
   & pre tt {
     display: inline;
@@ -450,7 +453,7 @@
   
   & .csv-data th {
     font-weight: 600;
-    background: #ffe5b5;
+    background: #f6f8fa;
     border-top: 0
   }
   .gutter {
